@@ -1,53 +1,70 @@
-# Política de acceso para evaluadores de Minciencias
+# Acceso al espejo público para evaluadores de Minciencias
 
-## Estado del repositorio
+## Estado y finalidad
 
-Este repositorio es privado. Se mantendrá privado hasta que el equipo de investigación complete la publicación científica y defina una estrategia de apertura de código compatible con la protección de datos, propiedad intelectual y compromisos institucionales.
+Este repositorio ha sido preparado como **espejo público de evaluación técnica**. Su finalidad es que un evaluador de Minciencias pueda inspeccionar directamente el código, la configuración, la trazabilidad metodológica, las métricas agregadas, las figuras y la documentación asociada a la Actividad 1.2.2, sin necesidad de crear una cuenta de GitHub ni solicitar permisos individuales.
 
-## Modalidad de acceso
+URL:
 
-Los evaluadores de Minciencias podrán recibir acceso temporal e individual bajo solicitud.
+https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias
 
-No se utilizarán cuentas compartidas ni credenciales genéricas.
+## Qué puede hacer un evaluador sin cuenta de GitHub
 
-## Paso a paso para solicitar acceso
+Cuando el repositorio esté configurado como **Public**, el evaluador puede:
 
-1. El evaluador debe disponer de una cuenta personal de GitHub.
-2. Debe enviar al equipo del proyecto:
-   - nombre completo;
-   - entidad;
-   - correo institucional;
-   - usuario de GitHub;
-   - referencia al proceso de evaluación de Minciencias.
-3. El administrador verifica la identidad y finalidad de la solicitud.
-4. Se concede acceso al repositorio privado con rol de solo lectura (`Read`).
-5. El acceso se registra con fecha de inicio y finalidad.
-6. Finalizada la evaluación, el acceso puede ser revocado.
+1. Abrir la URL desde cualquier navegador.
+2. Navegar por las carpetas y archivos.
+3. Leer el README, la guía de evaluación y el mapa T01–T04.
+4. Inspeccionar el código fuente y los archivos de configuración.
+5. Descargar archivos individuales.
+6. Descargar el repositorio completo mediante **Code > Download ZIP**.
+7. Clonar el repositorio mediante:
+   `git clone https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias.git`
 
-## Texto sugerido de solicitud
+No se requiere autenticación para estas operaciones de lectura pública.
 
-> Solicito acceso temporal de solo lectura al repositorio privado de evaluación de la Actividad 1.2.2 del Proyecto 110661, en calidad de evaluador de Minciencias. Mi usuario GitHub es [USUARIO], mi correo institucional es [CORREO] y la revisión se realiza en el marco de [REFERENCIA/CONVOCATORIA].
+## Qué no está publicado
 
-## Instrucciones para el administrador
+El espejo público no incluye:
+- datos clínicos crudos;
+- archivos identificables;
+- matrices por paciente;
+- predicciones individuales;
+- modelos serializados entrenados;
+- archivos de linkage;
+- secretos, tokens o credenciales;
+- acceso al repositorio operativo de desarrollo.
 
-En GitHub:
-1. Abrir `Salud-Digital-Lab/RepositorioGeneralCG_Minciencias`.
-2. Ir a **Settings**.
-3. Entrar a **Collaborators and teams** o **Manage access**.
-4. Seleccionar **Add people**.
-5. Buscar el usuario GitHub reportado por el evaluador.
-6. Asignar el rol **Read**.
-7. Confirmar la invitación.
-8. Registrar internamente fecha, usuario y finalidad.
-9. Al cierre de la evaluación, retirar el acceso si corresponde.
+Los datos y fuentes de investigación permanecen bajo almacenamiento institucional/controlado.
 
-## Restricciones
+## Diferencia entre el espejo público y el repositorio de desarrollo
 
-El acceso a este repositorio no otorga acceso a:
-- datos identificables;
-- bases clínicas crudas;
-- archivos con información personal;
-- modelos serializados derivados de datos restringidos;
-- infraestructura institucional.
+El repositorio `Salud-Digital-Lab/RepositorioGeneralCG_Minciencias` es un snapshot de evaluación. No es el repositorio operativo del equipo y no se sincroniza automáticamente con él.
 
-El repositorio se diseñó deliberadamente para permitir inspección técnica sin exponer información clínica sensible.
+Repositorio fuente de desarrollo:
+`DigitalHealthCauca/RepositorioGeneralCG`
+
+Commit fuente de referencia del snapshot:
+`59c51804196b9b216818b62aa0cf5ad36e5169a7`
+
+Esta separación permite publicar evidencia técnica estable sin exponer datos ni el espacio de trabajo interno.
+
+## Solicitudes excepcionales de información adicional
+
+La consulta del espejo público no requiere permisos. Si durante la evaluación Minciencias requiere revisar información que no está incluida en el snapshot público, la solicitud debe dirigirse formalmente al responsable del proyecto. Cualquier acceso adicional se evaluará según:
+- pertinencia para la evaluación;
+- acuerdos de confidencialidad;
+- aval ético y gobierno de datos;
+- propiedad intelectual;
+- políticas institucionales aplicables.
+
+La publicación del código no implica autorización para entregar datos clínicos.
+
+## Recomendación para citar el repositorio
+
+Puede citarse como:
+
+**Salud-Digital-Lab. RepositorioGeneralCG_Minciencias: snapshot de evaluación técnica de la Actividad 1.2.2, Proyecto 110661. GitHub, versión de evaluación 2026-09-02.**
+
+URL:
+https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias
