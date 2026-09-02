@@ -4,7 +4,10 @@
 
 Este documento orienta la inspección técnica del snapshot de evaluación correspondiente a la Actividad 1.2.2 del Proyecto 110661.
 
-La revisión puede hacerse sin acceso a datos crudos ni información identificable de participantes.
+El espejo está preparado para consulta pública. Una vez configurada su visibilidad como **Public**, la revisión puede realizarse desde cualquier navegador, sin cuenta de GitHub y sin acceso a datos crudos ni información identificable de participantes.
+
+URL:
+https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias
 
 ## Ruta de revisión recomendada
 
@@ -55,6 +58,7 @@ Consultar:
 - `artifacts/metrics/decision_curve_timbio_hpylori_v2.csv`
 - `artifacts/metrics/shap_importance_timbio_hpylori_v2.csv`
 - `artifacts/metrics/permutation_importance_timbio_hpylori_v2.csv`
+- `artifacts/figures/timbio_hpylori_v2/`
 
 El mejor modelo por AUC fuera de pliegue fue Random Forest, con AUC aproximadamente 0,516. El intervalo de confianza incluye 0,5, por lo que el resultado es compatible con discriminación no útil.
 
@@ -68,6 +72,15 @@ El objetivo del snapshot es demostrar:
 6. documentación de calibración, utilidad clínica y explicabilidad.
 
 No debe interpretarse que un modelo con AUC cercana a 0,5 puede emplearse clínicamente. La ausencia de utilidad predictiva en esta cohorte es un resultado técnico válido.
+
+## Descarga opcional
+
+El evaluador puede revisar todo en línea. Si desea una copia local:
+- usar **Code > Download ZIP**, o
+- ejecutar:
+  `git clone https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias.git`
+
+No se requiere cuenta de GitHub para descargar o clonar un repositorio público.
 
 ## Qué no está incluido
 Por confidencialidad y gobierno de datos no se incluyen:
