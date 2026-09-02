@@ -1,12 +1,22 @@
 # RepositorioGeneralCG_Minciencias
 
-Repositorio privado de evaluación y trazabilidad de la Actividad 1.2.2 del Proyecto 110661: **Estrategia territorial para la identificación de factores de riesgo que contribuyen a la prevención del cáncer gástrico en una población del departamento del Cauca**.
+Snapshot de evaluación técnica de la Actividad 1.2.2 del Proyecto 110661: **Estrategia territorial para la identificación de factores de riesgo que contribuyen a la prevención del cáncer gástrico en una población del departamento del Cauca**.
 
 ## Propósito
 
-Este repositorio es un **snapshot de evaluación** preparado para revisores de Minciencias. Contiene el código reproducible, la configuración, la gobernanza de variables, las métricas agregadas, las figuras y los informes técnicos asociados a la versión v2 del análisis de factibilidad para predecir resultado de *Helicobacter pylori* en pacientes tamizados de Timbío.
+Este repositorio fue preparado como **espejo público de evaluación** para revisores de Minciencias y otros evaluadores autorizados del proyecto. Contiene únicamente código reproducible, configuración, gobernanza de variables, métricas agregadas, figuras y documentación técnica asociada a la versión v2 del análisis de factibilidad para predecir resultado de *Helicobacter pylori* en pacientes tamizados de Timbío.
 
-No es el repositorio operativo de desarrollo y no se actualiza automáticamente con cada cambio del repositorio fuente. Su objetivo es permitir una inspección estable y trazable de la evidencia que respalda el informe de la Actividad 1.2.2.
+No es el repositorio operativo de desarrollo y no se actualiza automáticamente con cada cambio del repositorio fuente. Su objetivo es permitir una inspección estable, abierta y trazable de la evidencia que respalda el informe de la Actividad 1.2.2.
+
+## Acceso
+
+Una vez configurada la visibilidad del repositorio como **Public**, cualquier evaluador podrá consultar su contenido directamente desde el navegador, sin crear una cuenta de GitHub y sin solicitar permisos.
+
+URL del espejo de evaluación:
+
+https://github.com/Salud-Digital-Lab/RepositorioGeneralCG_Minciencias
+
+La consulta pública de este espejo **no concede acceso** al repositorio operativo de desarrollo ni a los datos de investigación.
 
 ## Snapshot congelado
 
@@ -28,13 +38,13 @@ No es el repositorio operativo de desarrollo y no se actualiza automáticamente 
 4. Revise `data/manifests/feature_registry_timbio_hpylori_v2.csv` para comprobar qué variables fueron elegibles o excluidas.
 5. Inspeccione `src/cg_tamizaje/models/timbio_hpylori_v2.py` y `scripts/run_timbio_hpylori_model_v2.py`.
 6. Revise los resultados agregados en `artifacts/` y el informe en `docs/informe_modelado_tripod_ai_v2.md`.
-7. Consulte `docs/ACCESO_EVALUADORES_MINCIENCIAS.md` para la política de acceso privado.
+7. Consulte `docs/ACCESO_EVALUADORES_MINCIENCIAS.md` para conocer el alcance del acceso público y las restricciones de información.
 
 ## Protección de información
 
-Este repositorio **no contiene** bases crudas, cohortes por paciente, identificadores, predicciones individuales ni modelos serializados entrenados. Los datos clínicos permanecen en almacenamiento autorizado y no se publican en GitHub.
+Este espejo público **no contiene** bases crudas, cohortes por paciente, identificadores, predicciones individuales ni modelos serializados entrenados. Los datos clínicos y los archivos de trabajo permanecen en almacenamiento institucional/autorizado y no se publican en GitHub.
 
-El repositorio se mantendrá privado hasta que el equipo genere la publicación científica correspondiente. Los evaluadores de Minciencias podrán recibir acceso temporal bajo solicitud individual, con rol de solo lectura.
+La apertura de este espejo corresponde exclusivamente a código, documentación y resultados agregados previamente revisados. La publicación del espejo **no implica la publicación de datos clínicos**, ni autoriza el acceso a las fuentes originales.
 
 ## Estructura
 
