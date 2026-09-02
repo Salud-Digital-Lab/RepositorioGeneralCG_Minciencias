@@ -1,0 +1,38 @@
+study_id: timbio_hpylori_feasibility_v2
+random_state: 20260902
+
+input:
+  path: data/interim/biomarkers_timbio_with_sociodemographics_v2.xlsx
+  municipality_column: data-datos_ubicacion-municipio
+  municipality_value: TIMBIO
+  outcome_column: Resultados_Helicobacter
+  positive_value: Positivo
+  negative_value: Negativo
+  dictionary_path: data/raw/Diccionario_Datos_Completo_Base_Unida_HP_Cauca (1).xlsx
+  dictionary_sheet: DICCIONARIO_COMPLETO
+  dictionary_header_row: 3
+  mandatory_column_position: 18
+
+feature_policy:
+  # Official mandatory fields (dictionary column R) are evaluated first. These
+  # exclusions enforce a pre-laboratory clinical-social prediction setting.
+  excluded_canonical_variables:
+    - data_datos_ubicacion_riesgo_class
+    - data_muestra_resultado
+    - clas_riesgo_cancer
+    - fecha_nacimiento
+    - riesgo
+  excluded_patterns:
+    - "(^|_)(id|identificador|identificacion|nombre|apellido|direccion|celular|telefono|correo|coordenada)(_|$)"
+    - "h_pylori|helicobacter|pepsin|pep_i|pep_ii|pgi|pgii|biomarc|endoscop|histolog|olga|resultado"
+    - "score|clas_riesgo|riesgo_general|riesgo_class"
+    - "fecha|muestra|kit|contactado|encuestador|instance|validacion|duplicado"
+  min_non_missing_predictor_observations: 10
+
+validation:
+  outer_folds: 5
+  inner_folds: 3
+  bootstrap_iterations: 200
+  auc_ci_bootstrap_iterations: 1000
+  sensitivity_target: 0.80
+  decision_thresholds: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]
